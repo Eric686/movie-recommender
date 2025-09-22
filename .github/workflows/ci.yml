@@ -30,9 +30,9 @@ jobs:
 
       - name: Deploy to Netlify
         if: github.ref == 'refs/heads/dev'  
-        uses: netlify/actions/cli@v2
+        uses: netlify/actions/cli@v3
         with:
           command: 'netlify deploy'
           directory: './dist' 
-          site_id: ${{ secrets.NETLIFY_SITE_ID }} 
-          auth_token: ${{ secrets.NETLIFY_AUTH_TOKEN }}  
+          site_id: ${{ secrets.9b48e542-9148-404f-8dd0-4efd6b186e6e }} 
+          auth_token: ${{ secrets.nfp_AP8fCnNAFRoXAGYSSAWQNKtJtHe6w92850bc}}  
