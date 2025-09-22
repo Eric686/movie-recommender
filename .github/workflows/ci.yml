@@ -28,11 +28,4 @@ jobs:
       - name: Run unit tests
         run: npm run test
 
-      - name: Deploy to Netlify
-        if: github.ref == 'refs/heads/dev'  
-        uses: netlify/actions/cli@v3
-        with:
-          command: 'netlify deploy'
-          directory: './dist' 
-          site_id: ${{ secrets.9b48e542-9148-404f-8dd0-4efd6b186e6e}} 
-          auth_token: ${{ secrets.nfp_AP8fCnNAFRoXAGYSSAWQNKtJtHe6w92850bc}}  
+     
