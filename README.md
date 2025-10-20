@@ -1,65 +1,59 @@
-# React + TypeScript + Vite
+# 🎬 Movie Recommender
 
+A responsive and dynamic movie recommendation web app built using **React**, **TypeScript**, **Tailwind CSS**, and **TMDB API**.
 
+![Movie Recommender](https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-blueviolet)
+  
+---
 
+## 📽️ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 Search movies and TV shows in real-time using TMDB API
+- 💡 Get smart movie recommendations
+- 🎨 Beautiful and modern UI with Tailwind CSS
+- ⚡ Fast performance powered by Vite
+- 🎯 Type-safe code with TypeScript
+- 🌙 Dark mode support (if implemented)
+- 📱 Fully responsive design
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Tech            | Description                                  |
+|-----------------|----------------------------------------------|
+| React           | Frontend library                             |
+| TypeScript      | Type-safe JavaScript                         |
+| Tailwind CSS    | Utility-first CSS framework                  |
+| TMDB API        | Movie database and recommendation engine     |
+| Vite            | Lightning-fast dev server and bundler        |
+| GitHub Actions  | Automated deployment (optional)              |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Live Demo
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-![status](https://img.shields.io/badge/Status-Development-blue)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
+🔗 [View on GitHub Pages](https://your-github-username.github.io/movie-recommender/)
+
+> Replace the link above with your actual deployment link.
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/movie-recommender.git
+cd movie-recommender
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+cp .env.example .env
+# Then, add your TMDB API key to the .env file
+
+# 4. Run the app
+npm run dev
